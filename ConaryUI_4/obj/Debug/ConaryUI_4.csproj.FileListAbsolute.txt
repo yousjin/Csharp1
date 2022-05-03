@@ -1,0 +1,16 @@
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4.csprojAssemblyReference.cache
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\App.g.cs
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4_MarkupCompile.cache
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4_MarkupCompile.lref
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\MainWindow.g.cs
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\bin\Debug\ConaryUI_4.exe.config
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\bin\Debug\ConaryUI_4.exe
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\bin\Debug\ConaryUI_4.pdb
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\App.baml
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\MainWindow.baml
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4.g.resources
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4.Properties.Resources.resources
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4.csproj.GenerateResource.cache
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4.csproj.CoreCompileInputs.cache
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4.exe
+C:\Users\sungzin\source\repos\WPF_Team\UI_4\ConaryUI_4\obj\Debug\ConaryUI_4.pdb

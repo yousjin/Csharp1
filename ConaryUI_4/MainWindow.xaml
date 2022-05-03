@@ -1,0 +1,190 @@
+﻿<Window x:Class="ConaryUI_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConaryUI_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        
+        <Canvas Grid.Row="0" Grid.ColumnSpan="2">
+            <Label Content="Conary"
+                   Canvas.Left="250"
+                   Canvas.Top="10"
+                   Width="130" Height="50"
+                   FontStyle="Italic"
+                   FontSize="30"
+                   FontWeight="Bold"/>
+
+            <!--메인 아이콘(좋아요, 다이어리, 홈 버튼)-->
+
+
+            <Button x:Name="HeartButton" Content="Heart"
+                    Width="30" Height="30"
+                    Canvas.Top="20"
+                    Canvas.Right="110"
+                    Click="DiaryButton_Click"/>
+
+
+            <Button x:Name="DiaryButton" Content="Diary"
+                    Width="30" Height="30"
+                    Canvas.Top="20"
+                    Canvas.Right="70"
+                    Click="DiaryButton_Click"/>
+
+            <Button x:Name="HomeButton" Content="Home"
+                    Width="30" Height="30"
+                    Canvas.Top="20"
+                    Canvas.Right="30"
+                    Click="HomeButton_Click"/>
+
+
+            
+            <!--프로필 & 구독중인 Ott-->
+            <Button x:Name="ProfileButton" Content="Profile"
+                    Width="70" Height="70"
+                    Canvas.Top="90"
+                    Canvas.Left="50"
+                    Click="ProfileButton_Click"/>
+
+            <TextBlock x:Name="UserName" Text="김윈프"
+                     FontSize="17"
+                     FontWeight="Bold"
+                     Canvas.Top="90"
+                     Canvas.Left="140"/>
+
+            <Line X1="120" Y1="120" X2="600" Y2="120"
+                  Stroke="Black"/>
+
+            <Label Content="구독 중"
+                   FontSize="16"
+                   Canvas.Top="120"
+                   Canvas.Left="140"
+                   Foreground="{StaticResource normalFontColor}"/>
+
+            <Button x:Name="SubscribedOtt1"
+                    Canvas.Top="135"
+                    Canvas.Left="210"
+                    Width="50" Height="50"/>
+
+            <Button x:Name="SubscribedOtt2"
+                    Canvas.Top="135"
+                    Canvas.Left="280"
+                    Width="50" Height="50"/>
+
+            <Button x:Name="SubscribedOtt3"
+                    Canvas.Top="135"
+                    Canvas.Left="350"
+                    Width="50" Height="50"/>
+
+            <Button x:Name="SubscribedOtt4"
+                    Canvas.Top="135"
+                    Canvas.Left="420"
+                    Width="50" Height="50"/>
+
+        </Canvas>
+
+        <!--나의 평점, 위시컨텐츠-->
+        
+        <!--나의 평점-->
+        <Canvas Grid.Row="1" Grid.ColumnSpan="2">
+            <Rectangle x:Name="myRating"
+                       Width="270" Height="500"
+                       Canvas.Top="30"
+                       Canvas.Left="15"
+                       Style="{StaticResource myRecstyle}"/>
+
+            <Label Content="나의 평점"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Foreground="{StaticResource normalFontColor}"
+                   Canvas.Top="40"
+                   Canvas.Left="25"/>
+
+            <Button x:Name="PlusRating"
+                    Content="+"
+                    Width="30" Height="30"
+                    Background="{StaticResource normalRecColor}"
+                    BorderBrush="{StaticResource normalRecColor}"
+                    Canvas.Top="30"
+                    Canvas.Left="240"
+                    FontSize="25"/>
+            
+            
+            
+            <!--위시컨텐츠 -->
+            <Rectangle x:Name="myWishList"
+                       Width="270" Height="500"
+                       Canvas.Top="30"
+                       Canvas.Right="15"
+                       Style="{StaticResource myRecstyle}"/>
+
+
+            <Label Content="위시컨텐츠"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Foreground="{StaticResource normalFontColor}"
+                   Canvas.Top="40"
+                   Canvas.Right="180"/>
+
+            <Button x:Name="Pluscontents1"
+                    FontSize="15"
+                    Foreground="{StaticResource normalFontColor}"
+                    Background="{StaticResource normalRecColor}"
+                    BorderBrush="{StaticResource normalRecColor}"
+                    Canvas.Bottom="55"
+                    Canvas.Left="130">
+                <Button.Content>
+                    <TextBlock>
+                        <Underline>
+                            더보기
+                        </Underline>
+                    </TextBlock>
+                </Button.Content>
+            </Button>
+
+            <Button x:Name="Pluscontents2"
+                    FontSize="15"
+                    Foreground="{StaticResource normalFontColor}"
+                    Background="{StaticResource normalRecColor}"
+                    BorderBrush="{StaticResource normalRecColor}"
+                    Canvas.Bottom="55"
+                    Canvas.Left="410">
+                <Button.Content>
+                    <TextBlock>
+                        <Underline>
+                            더보기
+                        </Underline>
+                    </TextBlock>
+                </Button.Content>
+            </Button>
+        </Canvas>
+        
+        <!--나의 평점 목록 update-->
+        <StackPanel x:Name="myRatingBoard"
+                    Grid.Row="1" Grid.Column="0"
+                    Background="White"
+                    Width="230" Height="400"/>
+
+        <!--내 위시 컨텐츠 update-->
+        <StackPanel x:Name="myWishBoard"
+                    Grid.Row="1" Grid.Column="1"
+                    Background="White"
+                    Width="230" Height="400"/>
+
+
+
+
+    </Grid>
+</Window>
